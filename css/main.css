@@ -1,0 +1,110 @@
+.box{
+	height:503px;
+}
+#main{
+	margin-top:50px;
+}
+img{
+	max-width: 100%; 
+	height: auto;"
+}
+html{
+	font-size: 1rem;
+}
+@media (max-width: 1200px) {
+	html {
+		font-size: calc(0.4rem + 0.4vw);
+	}
+}
+a{
+	color:black;
+	font-size:1.5em;
+}
+a: link{
+	text-decoration: none;
+}
+#nameCard{
+	margin:auto;
+	border:1px solid #9099a2;
+	background:transparent;
+	opacity:0.95;
+	color: #222BAA;
+}
+#nameCard hr{
+	border: 0;
+	height: 0.1em;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+#contact a{
+	color:#721837;
+	font-weight:700;
+}
+#linkBox:hover{
+	transform:scale(1.1);
+	transition:0.2s;
+}
+#buttons a{
+	font-weight:bolder;
+}
+#content_box{
+	background:#d0dcf7;
+}
+#resumeBox hr{
+	border: 0;
+	height: 0.12em;;
+	background-image: linear-gradient(90deg, rgba(24,18,122,1) 0%, rgba(208,220,247,1) 73%, rgba(208,220,247,1) 100%);
+}
+.pdf_link{
+	--delay: calc((var(--char-index) + 1) * 400ms);
+	animation: breathe 3000ms infinite both;
+	animation-delay: var(--delay);
+}
+.pdf_link:hover{
+	animation-play-state: paused;
+}
+@keyframes breathe {
+	0% {font-variation-settings: 'wght' 100, 'wdth' 85;font-size: 0.7em;;}
+	50% {font-variation-settings: 'wght' 100, 'wdth' 85;font-size: 1em;}
+	100% {font-variation-settings: 'wght' 100, 'wdth' 85;font-size: 0.7em;}
+}
+.card{
+	overflow:visible;
+	box-shadow: 5px 5px #50596e;
+	border-radius: 1em;
+}
+@keyframes slideInFromRight {
+	0% {transform: translateX(150%);}
+	100% {transform: translateX(0);}
+}
+#projectDiv .card{
+	animation: 1s ease-out 0s 1 slideInFromRight;
+}
+#projectDiv .card:hover{
+	-webkit-transform: scale(1.1);
+   	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	border-radius:2em;
+	transition:0.5s;
+}
+.carausel-item{
+	position:relative;
+}
+.textOverImage{
+	position: absolute;
+   	top: 10px;
+   	left: 10px;  
+   	padding: 5px;
+}
+.imageUnderText{
+	position: relative;
+    float: left;
+    width:  13em;
+    height: 28em;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+	border-radius:20px;
+}
+#carauselExampleIndicators{
+	box-shadow: 100px 50px 0px 0px rgba(0, 0, 255, .2);
+}

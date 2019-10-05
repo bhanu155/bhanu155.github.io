@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 	<title>CHANDRA BHANU</title>
-	<link rel="icon" type="image/png" href="../assets/titleIcon.png" />
+	<link rel="icon" type="image/png" href="assets/titleIcon.png" />
 	
 	<!-- Required meta tags -->
     <meta charset="utf-8">
@@ -31,80 +31,28 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	
 	<!-- css -->
-	<style type="text/css">
-		
-		.box{
-			height:503px;
-		}
-		#main{
-			margin-top:50px;
-		}
-		img{
-			max-width: 100%; 
-			height: auto;"
-		}
-		html{
-  			font-size: 1rem;
-		}
-		@media (max-width: 1200px) {
-  			html {
-    			font-size: calc(0.4rem + 0.4vw);
-  			}
-		}
-		a {
-			color:black;
-			font-size:1.5em;
-		}
-		a: link{
-			text-decoration: none;
-		}
-		#nameCard{
-			margin:auto;
-			border:1px solid #9099a2;
-			background:transparent;
-			opacity:0.95;
-			color: #222BAA;
-		}
-		#nameCard hr{
-			border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-		}
-		#contact a{
-			color:#721837;
-			font-weight:700;
-		}
-		#buttons a{
-			font-weight:bolder;
-		}
-		#content_box{
-			background:#d0dcf7;
-		}
-		.card{
-			overflow:visible;
-			box-shadow: 5px 5px #50596e;
-			border-radius: 1em 0% 0% 1em;
-		}
-	</style> 
+	<link href="css/main.css" rel="stylesheet" media="all">
 
+	<!-- tooltip -->
 	<script>
 		$(function () {
   			$('[data-toggle="tooltip"]').tooltip()
 		})	
 	</script>
 
-<body style="background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url(../assets/samuel-zeller-oBb-Y26PJgg-unsplash.jpg) no-repeat center center fixed; 
+<body style="background: linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.7)), url(/assets/samuel-zeller-oBb-Y26PJgg-unsplash.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;">
 	
+	
 
 
-<div class="container mt-4">
+<div class="container mt-0 mb-0">
 	<div class="row">
 		<div class="col-12 col-md-8 order-2 order-md-1" style="height:85%">
-			<div class="jumbotron" style="background:#9099a2; opacity:0.95;" id="content_box">
+			<div class="jumbotron my-0" style="background:#9099a2; opacity:0.95;" id="content_box">
 				
 				COMING SOON ! CHECK RESUME AND PROJECT PAGE FOR NOW !
 				
@@ -115,7 +63,7 @@
 		
 		<div class="col-12 col-md-4 order-1 order-md-2 justify-content-center align-items-center" id="template" style="    max-height: fit-content; line-height: inherit;">
 			
-			<div class="jumbotron my-3" id="nameCard" style="position:fixed;">
+			<div class="jumbotron my-5 mx-3" id="nameCard" style="position:fixed;">
 				<div>
 				<div class="row text-wrap">
 					<a href="/" class="text-decoration-none text-reset" style="font-family: 'Libre Baskerville', serif; font-weight:700; text-align: center;
@@ -135,7 +83,7 @@
 				</div>
 				</div>
 				<hr>
-				<div class="h-100 w-100 justify-content-around align-items-center" style="font-size:large; margin:auto; text-align:center;">
+				<div class="h-100 w-100 justify-content-around align-items-center" id="linkBox" style="font-size:large; margin:auto; text-align:center;">
 					<a class="w-100 text-info mx-3" href="https://github.com/bhanu155" data-toggle="tooltip" data-placement="left" title="Visit my GitHub Repo"><i class="fab fa-github-square" style="color:#222BAA"></i></a>
 					<a class="w-100 text-info mx-3" href="https://www.linkedin.com/in/chandra-bhanu" data-toggle="tooltip" data-placement="right" title="Check my LinkedIn profile"><i class="fab fa-linkedin" style="color:#222BAA"></i></a>
 					
@@ -143,13 +91,13 @@
 				<hr>
 				<div id="buttons">
 				<div class="row mt-3 mx-3">
-					<a role="button" class="btn btn-outline-dark btn-md btn-block" href="/resume" style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">RĒSUMĒ</a>
+					<a role="button" class="btn btn-outline-dark btn-md btn-block" href="resume.html" style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">RĒSUMĒ</a>
 				</div>
 				<div class="row my-2 mx-3">
-					<a role="button" class="btn btn-outline-dark btn-md btn-block" href="/projects" style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">PROJECTS</a>
+					<a role="button" class="btn btn-outline-dark btn-md btn-block" href="projects.html" style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">PROJECTS</a>
 				</div>
 				<div class="row mb-3 mx-3">
-					<a role="button" class="btn btn-outline-dark btn-md btn-block" href="/accomplishments" style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">ACCOMPLISHMENTS</a>
+					<a role="button" class="btn btn-outline-dark btn-md btn-block" href="accomplishments.html" style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">ACCOMPLISHMENTS</a>
 				</div>
 				</div>
 			</div>
