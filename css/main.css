@@ -6,14 +6,39 @@
 }
 img{
 	max-width: 100%; 
-	height: auto;"
+	height: auto;
 }
 html{
 	font-size: 1rem;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1204px) {
 	html {
-		font-size: calc(0.4rem + 0.4vw);
+		font-size: calc(0.6rem + 0.4vw);
+	}
+}
+@media only screen and (max-width: 768px) {
+    #namecard{
+		position:initial;
+		text-align:center;
+	}
+	#content_parent{
+		padding:0;
+	}
+	#nameCard a{
+		font-size:1em;
+	}
+	#buttons\ justify-content-center > div{
+		padding-left:8em;
+		padding-right:8em;
+	}
+	#resumeEducation .card-title{
+		line-height:initial;
+	}
+  
+}
+@media only screen and (min-width: 769px){
+	#nameCard{
+		position:fixed;
 	}
 }
 a{
@@ -42,6 +67,10 @@ a: link{
 #linkBox:hover{
 	transform:scale(1.1);
 	transition:0.2s;
+}
+#buttons{
+	text-align:center;
+	margin:auto;
 }
 #buttons a{
 	font-weight:bolder;
@@ -86,25 +115,5 @@ a: link{
 	border-radius:2em;
 	transition:0.5s;
 }
-.carausel-item{
-	position:relative;
-}
-.textOverImage{
-	position: absolute;
-   	top: 10px;
-   	left: 10px;  
-   	padding: 5px;
-}
-.imageUnderText{
-	position: relative;
-    float: left;
-    width:  13em;
-    height: 28em;
-    background-position: 50% 50%;
-    background-repeat:   no-repeat;
-    background-size:     cover;
-	border-radius:20px;
-}
-#carauselExampleIndicators{
-	box-shadow: 100px 50px 0px 0px rgba(0, 0, 255, .2);
-}
+
+

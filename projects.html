@@ -21,6 +21,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -31,7 +33,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	
 	<!-- css -->
-	<link href="css/main.css" rel="stylesheet" media="all">
+	<link href="/css/main.css" rel="stylesheet" media="all">
+	<link href="/css/scramble.css" rel="stylesheet" media="all">	
 
 	<!-- tooltip -->
 	<script>
@@ -50,7 +53,7 @@
 
 <div class="container mt-0 mb-0">
 	<div class="row">
-		<div class="col-12 col-md-8 order-2 order-md-1" style="height:85%">
+		<div class="col-12 col-md-8 order-2 order-md-1" style="height:85%" id="content_parent">
 			<div class="jumbotron my-0" style="padding-top:1em; background:#6d7993; padding-right:0; border-radius:0;"  id="content_box">
 			<div id="projectDiv">
 <!--    Project div starts here   -->
@@ -117,9 +120,9 @@
 		
 		
 		
-		<div class="col-12 col-md-4 order-1 order-md-2 justify-content-center align-items-center" id="template" style="    max-height: fit-content; line-height: inherit;">
+		<div class="col-12 col-md-4 order-1 order-md-2 justify-content-center align-items-center" id="template" style="    max-height: fit-content; line-height: inherit;" id="project_namecard_parent">
 			
-			<div class="jumbotron my-5 mx-3" id="nameCard" style="position:fixed;">
+			<div class="jumbotron my-5 mx-3" id="nameCard">
 				<div>
 				<div class="row text-wrap">
 					<a href="/" class="text-decoration-none text-reset" style="font-family: 'Libre Baskerville', serif; font-weight:700; text-align: center;
@@ -134,7 +137,7 @@
 						<a href="mailto:1729025@kiit.ac.in" data-toggle="tooltip" data-placement="right" title="Send e-mail" class="text-decoration-none" style="font-family: 'Libre Baskerville', serif; font-weight:400; font-size: inherit; margin:auto;"><i class="far fa-envelope"></i>		1729025@kiit.ac.in</a>
 					</div>
 					<div class="row text-wrap">	
-						<a href="tel:+917436874653" data-toggle="tooltip" data-placement="right" title="Give a call" class="text-decoration-none" style="font-family: 'Libre Baskerville', serif; font-weight:400; font-size: inherit; margin:auto;"><i class="fas fa-mobile-alt"></i>		+91 7436874653</a>
+						<a href="tel:+917436874653" data-toggle="tooltip" data-placement="right" title="Give a call" class="text-decoration-none" style="font-family: 'Libre Baskerville', serif; font-weight:400; font-size: inherit; margin:auto;"><i class="fab fa-whatsapp"></i> <i class="fas fa-phone"></i>		+91 7436874653</a>
 					</div>	
 				</div>
 				</div>
@@ -145,15 +148,15 @@
 					
 				</div>
 				<hr>
-				<div id="buttons">
+				<div id="buttons justify-content-center">
 				<div class="row mt-3 mx-3">
-					<a role="button" class="btn btn-outline-dark btn-md btn-block" href="resume.html" style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">RĒSUMĒ</a>
+					<a role="button" class="btn btn-outline-dark btn-md btn-block" href="/resume" style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">RĒSUMĒ</a>
 				</div>
 				<div class="row my-2 mx-3">
-					<a role="button" class="btn btn-outline-dark btn-md btn-block" href="projects.html" style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">PROJECTS</a>
+					<a role="button" class="btn btn-outline-dark btn-md btn-block" href="/projects" style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">PROJECTS</a>
 				</div>
 				<div class="row mb-3 mx-3">
-					<a role="button" class="btn btn-outline-dark btn-md btn-block" href="accomplishments.html" style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">ACCOMPLISHMENTS</a>
+					<a role="button" class="btn btn-outline-dark btn-md btn-block" href="/accomplishments" style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">ACCOMPLISHMENTS</a>
 				</div>
 				</div>
 			</div>
@@ -162,5 +165,7 @@
 	</div>
 </div>
 
-
+<!-- JavaScript -->
+	<script src="javascript/scramble.js"></script>
+	
 </body>

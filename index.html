@@ -21,6 +21,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
 
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -31,7 +33,8 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	
 	<!-- css -->
-	<link href="../css/main.css" rel="stylesheet" media="all">
+	<link href="/css/main.css" rel="stylesheet" media="all">
+	<link href="/css/scramble.css" rel="stylesheet" media="all">	
 
 	<!-- tooltip -->
 	<script>
@@ -45,26 +48,42 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;">
+	
 
 
 <div class="container mt-0 mb-0">
 	<div class="row">
-		<div class="col-12 col-md-8 order-2 order-md-1" style="height:85%">
-			<div class="jumbotron my-0" style="border-radius:0;background:rgba(151, 182, 194, 0.5);" id="content_box">
-				<div>
-					Content here
+		<div class="col-12 col-md-8 order-2 order-md-1" style="height:85%" id="content_parent">
+			<div class="jumbotron mt-5 mb-2" style="background:rgba(151, 182, 194, 0.5); height:30em; padding: 5em 2em 5em 2em;" id="content_box">
+				<div class="row justify-content-center;">
+					<div class="col-12" style="margin:auto;">
+						<div class="text-wrap">
+							<p style="font-size:1.5em; font-family: 'Kalam', cursive; color: rgb(107, 9, 36);">HI, I'am</p>
+							<h2 style="font-size:3.5em; font-weight:1000; font-family: 'Kaushan Script', cursive; word-spacing: 0.5em; letter-spacing:0.1em; text-shadow: 0.04em 0.02em black;;"><span style="color: darkslategray;">CHANDRA</span> <span style="color: midnightblue;;">BHANU</span></h2>
+							<br>
+							<div style="font-size:1em; font-weight: 600; color: rgb(107, 9, 36);; line-height:0.5em; font-family: 'Kalam', cursive;">
+								<P>An aspiring Full Stack Developer.</P>
+								<p>With proficient skills in Computer Programming, Web Development and Cyber Security.</p>
+								<p>Currently pursuing my Bachelor's degree in Computer Science from <a href="https://www.kiit.ac.in" class="text-info" style="text-decoration:none; font-size:1em;">KIIT University.</a></p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="text-center">
-					<p style="color:darkgreen; font-family: 'Kalam', cursive; font-weight:bold; font-size:large;"><i class="far fa-grin text-primary" style="font-size:1.5em;"></i> Thanks for visiting !</p>
+				<div class="row mt-5">
+				<!-- 	Scramble messages here	 -->
+					<div id="messenger" style="margin:auto;"></div>
 				</div>
-			</div>	
+			</div>
+			<div class="text-center">
+					<p style="color:darkgreen; font-family: 'Kalam', cursive; font-weight:bold; font-size:large; margin:auto;"><i class="far fa-grin text-primary" style="font-size:1.5em;"></i> Thanks for visiting !</p>
+			</div>
 		</div>
 		
 		
 		
-		<div class="col-12 col-md-4 order-1 order-md-2 justify-content-center align-items-center" id="template" style="    max-height: fit-content; line-height: inherit;">
+		<div class="col-12 col-md-4 order-1 order-md-2 justify-content-center align-items-center" id="template" style="    max-height: fit-content; line-height: inherit;" id="home_namecard_parent">
 			
-			<div class="jumbotron my-5 mx-3" id="nameCard" style="position:fixed;">
+			<div class="jumbotron my-5 mx-3" id="nameCard">
 				<div>
 				<div class="row text-wrap">
 					<a href="/" class="text-decoration-none text-reset" style="font-family: 'Libre Baskerville', serif; font-weight:700; text-align: center;
@@ -79,7 +98,7 @@
 						<a href="mailto:1729025@kiit.ac.in" data-toggle="tooltip" data-placement="right" title="Send e-mail" class="text-decoration-none" style="font-family: 'Libre Baskerville', serif; font-weight:400; font-size: inherit; margin:auto;"><i class="far fa-envelope"></i>		1729025@kiit.ac.in</a>
 					</div>
 					<div class="row text-wrap">	
-						<a href="tel:+917436874653" data-toggle="tooltip" data-placement="right" title="Give a call" class="text-decoration-none" style="font-family: 'Libre Baskerville', serif; font-weight:400; font-size: inherit; margin:auto;"><i class="fas fa-mobile-alt"></i>		+91 7436874653</a>
+						<a href="tel:+917436874653" data-toggle="tooltip" data-placement="right" title="Give a call" class="text-decoration-none" style="font-family: 'Libre Baskerville', serif; font-weight:400; font-size: inherit; margin:auto;"><i class="fab fa-whatsapp"></i> <i class="fas fa-phone"></i>		+91 7436874653</a>
 					</div>	
 				</div>
 				</div>
@@ -90,7 +109,7 @@
 					
 				</div>
 				<hr>
-				<div id="buttons">
+				<div id="buttons justify-content-center">
 				<div class="row mt-3 mx-3">
 					<a role="button" class="btn btn-outline-dark btn-md btn-block" href="resume.html" style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">RĒSUMĒ</a>
 				</div>
@@ -107,5 +126,7 @@
 	</div>
 </div>
 
-
+<!-- JavaScript -->
+	<script src="javascript/scramble.js"></script>
+	
 </body>
