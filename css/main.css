@@ -28,17 +28,47 @@ html{
 		font-size:1em;
 	}
 	#buttons\ justify-content-center > div{
-		padding-left:8em;
-		padding-right:8em;
+		padding-left:5em;
+		padding-right:5em;
 	}
 	#resumeEducation .card-title{
 		line-height:initial;
+	}
+	#name{
+		font-size:2.5em; 
+		font-weight:1000;
+		font-family: 'Kaushan Script', cursive;
+		word-spacing: 0.4em; 
+		letter-spacing:0.1em; 
+		text-shadow: 0.04em 0.02em aliceblue;
+	}
+	#introDesc{
+		font-size:1em; 
+		font-weight: 600; 
+		color: rgb(107, 9, 36);
+		line-height:1em; 
+		font-family: 'Kalam', cursive;
 	}
   
 }
 @media only screen and (min-width: 769px){
 	#nameCard{
 		position:fixed;
+	}
+	#name{
+		font-size:3.5em; 
+		font-weight:1000;
+		font-family: 'Kaushan Script', cursive;
+		word-spacing: 0.4em; 
+		letter-spacing:0.1em; 
+		text-shadow: 0.04em 0.02em aliceblue;
+	}
+	#introDesc{
+		font-size:1em; 
+		font-weight: 600; 
+		color: rgb(107, 9, 36);
+		line-height:0.5em; 
+		font-family: 'Kalam', cursive;
 	}
 }
 a{
