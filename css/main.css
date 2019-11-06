@@ -94,12 +94,12 @@ a: link{
 	color:#721837;
 	font-weight:700;
 }
-#linkBox:hover{
-	transform:scale(1.1);
-	transition:0.2s;
-}
 #linkBox a{
 	font-size:2em;
+}
+#linkBox : hover{
+	transform:scale(1.1);
+	transition:0.2s;
 }
 #buttons{
 	text-align:center;
