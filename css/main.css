@@ -98,6 +98,9 @@ a: link{
 	transform:scale(1.1);
 	transition:0.2s;
 }
+#linkBox a{
+	font-size:2em;
+}
 #buttons{
 	text-align:center;
 	margin:auto;
