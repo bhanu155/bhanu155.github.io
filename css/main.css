@@ -97,7 +97,7 @@ a: link{
 #linkBox a{
 	font-size:2em;
 }
-#linkBox : hover{
+#linkBox a: hover{
 	transform:scale(1.1);
 	transition:0.2s;
 }
