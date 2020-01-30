@@ -95,13 +95,11 @@ a: link{
 	font-weight:700;
 }
 #linkBox{
-	font-size: x-large;
-	margin:auto;
-	text-align:center;
+	font-size: x-large; margin:auto; text-align:center;
 }
-/* #linkBox a{
+#linkBox a{
 	font-size:2em;
-} */
+}
 #linkBox a:hover{
 	-webkit-transform: scale(1.2);
    	-ms-transform: scale(1.2);
