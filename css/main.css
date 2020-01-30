@@ -95,7 +95,7 @@ a: link{
 	font-weight:700;
 }
 #linkBox a{
-	font-size:4em;
+	font-size:3em;
 }
 #linkBox a:hover{
 	transform:scale(1.5);
