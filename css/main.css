@@ -96,10 +96,10 @@ a: link{
 }
 #linkBox a{
 	font-size:2em;
-}
-#linkBox :hover{
-	transform:scale(1.5);
 	transition:0.2s;
+}
+#linkBox a:hover{
+	transform:scale(1.5);
 }
 #buttons{
 	text-align:center;
