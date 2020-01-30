@@ -96,6 +96,15 @@ a: link{
 	height: 0.1em;
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
+.img-area{
+	 width: 50px;
+	 height: 50px;
+	 border-radius: 50%;
+	 background: white;
+	 position: absolute;
+	 top: -5%;
+	 left: 45%;	 
+}
 #contact a{
 	color:#721837;
 	font-weight:700;
