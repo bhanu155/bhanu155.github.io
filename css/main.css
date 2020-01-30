@@ -94,6 +94,9 @@ a: link{
 	color:#721837;
 	font-weight:700;
 }
+#linkBox{
+	font-size: x-large;
+}
 #linkBox a{
 	font-size:2em;
 	transition:0.2s;
