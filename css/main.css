@@ -22,10 +22,16 @@ html{
 		font-size: calc(0.6rem + 0.4vw);
 	}
 }
+/* Mobile view : below md */
 @media only screen and (max-width: 768px) {
     #namecard{
 		position:initial;
 		text-align:center;
+	}
+	#img-area{
+		bottom:15em;
+		right:7.5em;
+		top:unset;
 	}
 	#content_parent{
 		padding:0;
