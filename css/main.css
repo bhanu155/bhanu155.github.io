@@ -99,12 +99,14 @@ a: link{
 	margin:auto;
 	text-align:center;
 }
-#linkBox a{
+/* #linkBox a{
 	font-size:2em;
-	transition:0.2s;
-}
+} */
 #linkBox a:hover{
-	transform:scale(1.5);
+	-webkit-transform: scale(1.2);
+   	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+	transition:0.2s;
 }
 #buttons{
 	text-align:center;
