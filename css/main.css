@@ -67,6 +67,11 @@ html{
 	#nameCard{
 		position:fixed;
 	}
+	#img-area{
+		bottom:unset;
+		right:4.6em;
+		top:-1em;
+	}
 	#name{
 		font-size:3.5em; 
 		font-weight:1000;
