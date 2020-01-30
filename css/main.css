@@ -95,10 +95,10 @@ a: link{
 	font-weight:700;
 }
 #linkBox a{
-	font-size:2em;
+	font-size:4em;
 }
-#linkBox a: hover{
-	transform:scale(1.1);
+#linkBox a:hover{
+	transform:scale(1.5);
 	transition:0.2s;
 }
 #buttons{
