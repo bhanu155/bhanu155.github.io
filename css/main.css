@@ -96,6 +96,8 @@ a: link{
 }
 #linkBox{
 	font-size: x-large;
+	margin:auto;
+	text-align:center;
 }
 #linkBox a{
 	font-size:2em;
