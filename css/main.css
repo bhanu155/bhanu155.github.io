@@ -84,7 +84,7 @@ html{
 		font-size:1em; 
 		font-weight: 600; 
 		color: rgb(107, 9, 36);
-		line-height:0.5em; 
+		line-height:2em; 
 		font-family: 'Kalam', cursive;
 	}
 }
@@ -94,6 +94,9 @@ a{
 }
 a: link{
 	text-decoration: none;
+}
+#introDesc p{
+	margin-bottom:0;
 }
 #nameCard{
 	margin:auto;
