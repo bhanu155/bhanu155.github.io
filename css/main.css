@@ -55,13 +55,15 @@ html{
 		text-shadow: 0.04em 0.02em aliceblue;
 	}
 	#introDesc{
-		font-size:1em; 
+		font-size:1.2em; 
 		font-weight: 600; 
 		color: rgb(107, 9, 36);
-		line-height:1em; 
+		line-height:1.2em; 
 		font-family: 'Kalam', cursive;
 	}
-  
+	#introDesc p{
+		margin-bottom:0;
+	}
 }
 @media only screen and (min-width: 769px){
 	#nameCard{
