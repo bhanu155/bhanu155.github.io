@@ -4,6 +4,9 @@ background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-2
 background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+/* #template{
+	background-color: #007bff;
+} */
 .box{
 	height:503px;
 }
@@ -93,16 +96,17 @@ html{
 a{
 	color:black;
 	font-size:1.5em;
-}
-a: link{
 	text-decoration: none;
 }
 #introDesc p{
 	margin-bottom:0;
 }
+/* name animation */
 #nameCard{
 	margin:auto;
 	border:1px solid #9099a2;
+	border-top: 3px solid #007bff;
+	border-bottom: 3px solid #007bff;
 	background:transparent;
 	opacity:0.95;
 	color: #222BAA;
@@ -116,18 +120,24 @@ a: link{
 	color:#721837;
 	font-weight:700;
 }
+
+#contact div :hover{
+	color: rgb(49, 197, 69);
+}
 #linkBox{
 	font-size: x-large; margin:auto; text-align:center;
 }
 #linkBox a{
 	font-size:2em;
 }
-#linkBox a:hover{
+#linkBox a :hover{
 	-webkit-transform: scale(1.2);
    	-ms-transform: scale(1.2);
 	transform: scale(1.2);
 	transition:0.2s;
 }
+
+
 #buttons{
 	text-align:center;
 	margin:auto;
@@ -167,6 +177,11 @@ a: link{
 }
 #projectDiv .card{
 	animation: 1s ease-out 0s 1 slideInFromRight;
+	border-left: 6px solid #5cb85c;
+}
+
+#projectDiv a{
+	color: rgb(29, 170, 29);
 }
 #projectDiv .card:hover{
 	-webkit-transform: scale(1.1);
@@ -174,6 +189,11 @@ a: link{
 	transform: scale(1.1);
 	border-radius:2em;
 	transition:0.5s;
+	color: #222BAA;
+}
+#content_box{
+	/* border: 1px solid #FFB300; */
+	box-shadow: 3px 0.2em 3px 0 grey, -0.4em 0 0.4em white;
 }
 
 
