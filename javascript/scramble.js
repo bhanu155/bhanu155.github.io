@@ -9,11 +9,14 @@ var Messenger = function(el){
     m.fadeBuffer = false;
     m.messages = [
       'I write CLEAN code >_ ...',
-      'to SOLVE complex problems ... ',
-      'by EXECUTING efficient solutions !!!'
-    ];
+      'And Build Large Scale Distributed Application & Services !',
+      'Using Java/Spring or JavaScript/Node.js !',
+      'And React.JS, Ext.JS, Bootstrap, Material-UI ... !',
+      'I can handle SQL and No-SQL databases !',
+      'Also, I can manage agile teams !',
+    ]; 
     
-    setTimeout(m.animateIn, 100);
+    setTimeout(m.animateIn, 200);
   };
   
   m.generateRandomString = function(length){
