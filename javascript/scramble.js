@@ -9,11 +9,12 @@ var Messenger = function(el){
     m.fadeBuffer = false;
     m.messages = [
       'I write CLEAN code >_ ...',
-      'And Build Large Scale Distributed Application & Services !',
-      'Using Java/Spring or JavaScript/Node.js !',
-      'And React.JS, Ext.JS, Bootstrap, Material-UI ... !',
-      'I can handle SQL and No-SQL databases !',
-      'Also, I can manage agile teams !',
+      'Large Scale Applicaitons!',
+      'High performance distributed services!',
+      'Java/Spring + JavaScript/Node.js!',
+      'React.JS, Bootstrap, XYZ.js ...',
+      'SQL and No-SQL Databases !',
+      'Manage agile teams!',
     ]; 
     
     setTimeout(m.animateIn, 200);
