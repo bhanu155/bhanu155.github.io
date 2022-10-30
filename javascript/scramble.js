@@ -14,7 +14,7 @@ var Messenger = function(el){
       'Java/Spring + JavaScript/Node.js !',
       'React.JS, Bootstrap, XYZ.js ...',
       'SQL and No-SQL Databases !',
-      'Manage agile teams !',
+      'Agile SDLC !',
     ]; 
     
     setTimeout(m.animateIn, 200);
