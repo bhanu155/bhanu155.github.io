@@ -8,13 +8,15 @@ var Messenger = function(el){
     m.current_length = 0;
     m.fadeBuffer = false;
     m.messages = [
-      'I write CLEAN code >_ ...',
-      'Large Scale Applications !',
-      'High Performance Distributed Services !',
-      'Java/Spring + JavaScript/Node.js !',
-      'React.JS, Bootstrap, XYZ.js ...',
-      'SQL and No-SQL Databases !',
-      'Agile SDLC !',
+      '>_ Large Scale Applications',
+      '>_ High Performance Distributed Services',
+      '>_ Java/Spring + JavaScript/Node.js',
+      '>_ React.JS, Ext.JS, SAP-UI5',
+      '>_ SQL, MongoDB, GraphQL',
+      '>_ Agile SDLC, Software Project Management',
+      '>_ Code Review, CI/CD, TDD, BDD',
+      '>_ Software Project Management',
+      '>_ Business AI, RAG, LLMs'
     ]; 
     
     setTimeout(m.animateIn, 200);
