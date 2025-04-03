@@ -31,9 +31,3 @@
     background-position: center;
     transition: opacity 1.5s ease-in-out;
   }
-
-  .name-box {
-    background-color: rgba(0, 0, 0, 0.4); /* subtle dark overlay */
-    padding: 20px 40px;
-    border-radius: 12px;
-  }
