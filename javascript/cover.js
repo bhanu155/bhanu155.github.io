@@ -4,7 +4,7 @@ let current = 1;
 
 // Create array of image paths
 const images = Array.from(
-  { length: 18 },
+  { length: 15 },
   (_, i) => `assets/cover/bg${i + 1}.jpg`
 );
 
