@@ -55,6 +55,42 @@
       height: 100%;
     }
 
+    .scroll-down-arrow {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 2rem;
+      animation: bounce 2s infinite;
+      cursor: pointer;
+      z-index: 2;
+      text-decoration: none;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      20%,
+      50%,
+      80%,
+      100% {
+        transform: translateX(-50%) translateY(0);
+      }
+
+      40% {
+        transform: translateX(-50%) translateY(-10px);
+      }
+
+      60% {
+        transform: translateX(-50%) translateY(-5px);
+      }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     #messenger {
       text-align: center;
       font-family: 'Philosopher', sans-serif;
@@ -113,10 +149,13 @@
     <div class="name-box">
       <h1>CHANDRA BHANU</h1>
     </div>
+    <a href="#info-section" class="scroll-down-arrow">
+      <i class="fas fa-chevron-down"></i>
+    </a>
   </div>
 
   <!-- Info Section -->
-  <div class="jumbotron mt-md-0 mb-0" style="background: rgba(151, 182, 194, 0.5);">
+  <div id="info-section" class="jumbotron mt-md-0 mb-0" style="background: rgba(151, 182, 194, 0.5);">
     <div class="text-wrap">
       <p>Full-Stack Software Engineer with 4+ years of experience delivering scalable, secure, and user-centric
         products across enterprise and SaaS domains. I specialize in building modern web applications using
@@ -191,7 +230,9 @@
   <script src="javascript/nameFont.js"></script>
 </body>
 
-<footer style="background-color: #000; color: #ccc; text-align: center; padding: 1rem 0; font-family: 'Philosopher', sans-serif;">
+<footer
+  style="background-color: #000; color: #ccc; text-align: center; padding: 1rem 0; font-family: 'Philosopher', sans-serif;">
   &copy; Chandra Bhanu 2025. All rights reserved.
 </footer>
+
 </html>
