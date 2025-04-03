@@ -1,199 +1,267 @@
-#body{
-	background: #ECE9E6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+#body {
+	background: #ECE9E6;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
+
 /* #template{
 	background-color: #007bff;
 } */
-.box{
-	height:503px;
+.box {
+	height: 503px;
 }
-#main{
-	margin-top:50px;
+
+#main {
+	margin-top: 50px;
 }
-img{
-	max-width: 100%; 
+
+img {
+	max-width: 100%;
 	height: auto;
 }
-html{
+
+html {
 	font-size: 1rem;
 }
+
 @media (max-width: 1204px) {
 	html {
 		font-size: calc(0.6rem + 0.4vw);
 	}
 }
+
 /* Mobile view : below md */
 @media only screen and (max-width: 768px) {
-    #namecard{
-		position:initial;
-		text-align:center;
+	#namecard {
+		position: initial;
+		text-align: center;
 	}
-	#img-area{
-		bottom:15em;
-		right:6.5em;
-		top:unset;
+
+	#img-area {
+		bottom: 15em;
+		right: 6.5em;
+		top: unset;
 	}
-	#content_parent{
-		padding:0;
+
+	#content_parent {
+		padding: 0;
 	}
-	#nameCard a{
-		font-size:1em;
+
+	#nameCard a {
+		font-size: 1em;
 	}
-	#buttons\ justify-content-center > div{
-		padding-left:5em;
-		padding-right:5em;
+
+	#buttons\ justify-content-center>div {
+		padding-left: 5em;
+		padding-right: 5em;
 	}
-	#resumeEducation .card-title{
-		line-height:initial;
+
+	#resumeEducation .card-title {
+		line-height: initial;
 	}
-	#name{
-		font-size:2.5em; 
-		font-weight:1000;
+
+	#name {
+		font-size: 2.5em;
+		font-weight: 1000;
 		font-family: 'Kaushan Script', cursive;
-		word-spacing: 0.4em; 
-		letter-spacing:0.1em; 
+		word-spacing: 0.4em;
+		letter-spacing: 0.1em;
 		text-shadow: 0.04em 0.02em aliceblue;
 	}
-	#introDesc{
-		font-size:1.2em; 
-		font-weight: 600; 
+
+	#introDesc {
+		font-size: 1.2em;
+		font-weight: 600;
 		color: rgb(107, 9, 36);
-		line-height:1.2em; 
+		line-height: 1.2em;
 		font-family: 'Kalam', cursive;
 	}
-	#introDesc p{
-		margin-bottom:0;
+
+	#introDesc p {
+		margin-bottom: 0;
 	}
 }
-@media only screen and (min-width: 769px){
-	#nameCard{
-		position:fixed;
+
+@media only screen and (min-width: 769px) {
+	#nameCard {
+		position: fixed;
 	}
-	#img-area{
-		bottom:unset;
-		right:4.6em;
-		top:-1em;
+
+	#img-area {
+		bottom: unset;
+		right: 4.6em;
+		top: -1em;
 	}
-	#name{
-		font-size:3.5em; 
-		font-weight:1000;
+
+	#name {
+		font-size: 3.5em;
+		font-weight: 1000;
 		font-family: 'Kaushan Script', cursive;
-		word-spacing: 0.4em; 
-		letter-spacing:0.1em; 
+		word-spacing: 0.4em;
+		letter-spacing: 0.1em;
 		text-shadow: 0.04em 0.02em aliceblue;
 	}
-	#introDesc{
-		font-size:1em; 
-		font-weight: 600; 
+
+	#introDesc {
+		font-size: 1em;
+		font-weight: 600;
 		color: rgb(107, 9, 36);
-		line-height:2em; 
+		line-height: 2em;
 		font-family: 'Kalam', cursive;
 	}
 }
-a{
-	color:black;
-	font-size:1.5em;
+
+a {
+	color: black;
+	font-size: 1.5em;
 	text-decoration: none;
 }
-#introDesc p{
-	margin-bottom:0;
+
+#introDesc p {
+	margin-bottom: 0;
 }
+
 /* name animation */
-#nameCard{
-	margin:auto;
-	border:1px solid #9099a2;
+#nameCard {
+	margin: auto;
+	border: 1px solid #9099a2;
 	border-top: 3px solid #007bff;
 	border-bottom: 3px solid #007bff;
-	background:transparent;
-	opacity:0.95;
+	background: transparent;
+	opacity: 0.95;
 	color: #222BAA;
 }
-#nameCard hr{
+
+#nameCard hr {
 	border: 0;
 	height: 0.1em;
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
-#contact a{
-	color:#721837;
-	font-weight:700;
+
+.contact-card {
+	background-color: rgba(255, 255, 255, 0.25);
+	backdrop-filter: blur(5px);
+	border-radius: 12px;
+	padding: 2rem 1.5rem;
+	max-width: 700px;
+	width: 90%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#contact div :hover{
+#contact a {
+	color: #721837;
+	font-weight: 700;
+}
+
+#contact div :hover {
 	color: rgb(49, 197, 69);
 }
-#linkBox{
-	font-size: x-large; margin:auto; text-align:center;
+
+#linkBox {
+	font-size: x-large;
+	margin: auto;
+	text-align: center;
 }
-#linkBox a{
-	font-size:2em;
+
+#linkBox a {
+	font-size: 2em;
 }
-#linkBox a :hover{
+
+#linkBox a :hover {
 	-webkit-transform: scale(1.2);
-   	-ms-transform: scale(1.2);
+	-ms-transform: scale(1.2);
 	transform: scale(1.2);
-	transition:0.2s;
+	transition: 0.2s;
 }
 
 
-#buttons{
-	text-align:center;
-	margin:auto;
+#buttons {
+	text-align: center;
+	margin: auto;
 }
-#buttons a{
-	font-weight:bolder;
+
+#buttons a {
+	font-weight: bolder;
 }
-#content_box{
-	background:#d0dcf7;
+
+#content_box {
+	background: #d0dcf7;
 }
-#resumeBox hr{
+
+#resumeBox hr {
 	border: 0;
-	height: 0.12em;;
-	background-image: linear-gradient(90deg, rgba(24,18,122,1) 0%, rgba(208,220,247,1) 73%, rgba(208,220,247,1) 100%);
+	height: 0.12em;
+	;
+	background-image: linear-gradient(90deg, rgba(24, 18, 122, 1) 0%, rgba(208, 220, 247, 1) 73%, rgba(208, 220, 247, 1) 100%);
 }
-.pdf_link{
+
+.pdf_link {
 	--delay: calc((var(--char-index) + 1) * 400ms);
 	animation: breathe 3000ms infinite both;
 	animation-delay: var(--delay);
 }
-.pdf_link:hover{
+
+.pdf_link:hover {
 	animation-play-state: paused;
 }
+
 @keyframes breathe {
-	0% {font-variation-settings: 'wght' 100, 'wdth' 85;font-size: 0.7em;;}
-	50% {font-variation-settings: 'wght' 100, 'wdth' 85;font-size: 1em;}
-	100% {font-variation-settings: 'wght' 100, 'wdth' 85;font-size: 0.7em;}
+	0% {
+		font-variation-settings: 'wght' 100, 'wdth' 85;
+		font-size: 0.7em;
+		;
+	}
+
+	50% {
+		font-variation-settings: 'wght' 100, 'wdth' 85;
+		font-size: 1em;
+	}
+
+	100% {
+		font-variation-settings: 'wght' 100, 'wdth' 85;
+		font-size: 0.7em;
+	}
 }
-.card{
-	overflow:visible;
+
+.card {
+	overflow: visible;
 	box-shadow: 5px 5px #50596e;
 	border-radius: 1em;
 }
+
 @keyframes slideInFromRight {
-	0% {transform: translateX(150%);}
-	100% {transform: translateX(0);}
+	0% {
+		transform: translateX(150%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
 }
-#projectDiv .card{
+
+#projectDiv .card {
 	animation: 1s ease-out 0s 1 slideInFromRight;
 	border-left: 6px solid #5cb85c;
 }
 
-#projectDiv a{
+#projectDiv a {
 	color: rgb(29, 170, 29);
 }
-#projectDiv .card:hover{
+
+#projectDiv .card:hover {
 	-webkit-transform: scale(1.1);
-   	-ms-transform: scale(1.1);
+	-ms-transform: scale(1.1);
 	transform: scale(1.1);
-	border-radius:2em;
-	transition:0.5s;
+	border-radius: 2em;
+	transition: 0.5s;
 	color: #222BAA;
 }
-#content_box{
+
+#content_box {
 	/* border: 1px solid #FFB300; */
 	box-shadow: 3px 0.2em 3px 0 grey, -0.4em 0 0.4em white;
 }
-
-
