@@ -1,208 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>CHANDRA BHANU</title>
-    <link rel="icon" type="image/png" href="assets/titleIcon.png" />
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+<head>
+  <title>CHANDRA BHANU</title>
+  <link rel="icon" type="image/png" href="assets/titleIcon.png" />
 
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 
-    <!-- Semantic UI -->
-    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css" />
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+  <!-- Semantic UI -->
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css" />
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Kalam&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet" />
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-    <!-- Custom CSS -->
-    <link href="/css/main.css" rel="stylesheet" />
-    <link href="/css/scramble.css" rel="stylesheet" />
-    <link href="/css/nameFont.css" rel="stylesheet" />
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
-    <style>
-      body, html {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        height: 100%;
-      }
+  <!-- Custom CSS -->
+  <link href="/css/main.css" rel="stylesheet" />
+  <link href="/css/scramble.css" rel="stylesheet" />
+  <link href="/css/nameFont.css" rel="stylesheet" />
 
-      #hero {
-        position: relative;
-        height: 100vh;
-        width: 100%;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: "Playfair Display SC", serif;
-        text-align: center;
-      }
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      height: 100%;
+    }
 
+    #hero {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Playfair Display SC", serif;
+      text-align: center;
+    }
+
+    #hero img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      z-index: -1;
+      transition: opacity 1.5s ease-in-out;
+    }
+
+    @media (min-width: 768px) {
       #hero img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-        z-index: -1;
-        transition: opacity 1.5s ease-in-out;
+        object-fit: cover;
       }
+    }
 
-      @media (min-width: 768px) {
-        #hero img {
-          object-fit: cover;
-        }
-      }
+    .name-box {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 20px 40px;
+      border-radius: 12px;
+      color: white;
+      z-index: 1;
+    }
 
-      .name-box {
-        background-color: rgba(0, 0, 0, 0.4);
-        padding: 20px 40px;
-        border-radius: 12px;
-        color: white;
-        z-index: 1;
-      }
+    .name-box h1 {
+      font-size: 4em;
+      font-weight: bold;
+      letter-spacing: 0.2em;
+      margin: 0;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    }
 
-      .name-box h1 {
-        font-size: 4em;
-        font-weight: bold;
-        letter-spacing: 0.2em;
-        margin: 0;
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-      }
+    #content_parent,
+    #template {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: 100%;
+    }
 
-      #content_parent,
-      #template {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        min-height: 100%;
-      }
+    .jumbotron {
+      height: 100%;
+    }
+  </style>
+</head>
 
-      .jumbotron {
-        height: 100%;
-      }
-    </style>
-  </head>
-
-  <body>
-    <!-- Hero Section -->
-    <div id="hero">
-      <img id="bg-image" src="assets/cover/bg1.jpg" alt="Cover Background" />
-      <div class="name-box">
-        <h1>CHANDRA BHANU</h1>
-      </div>
+<body>
+  <!-- Hero Section -->
+  <div id="hero">
+    <img id="bg-image" src="assets/cover/bg1.jpg" alt="Cover Background" />
+    <div class="name-box">
+      <h1>CHANDRA BHANU</h1>
     </div>
+  </div>
 
-    <!-- Info Section -->
-    <div class="container mt-0 mb-0">
-      <div class="row align-items-start">
-        <!-- Left content -->
-        <div class="col-12 col-md-8 order-2 order-md-1" id="content_parent">
-          <div class="jumbotron mt-md-5 mb-2" style="background: rgba(151, 182, 194, 0.5); padding: 3em 2em" id="content_box">
-            <!-- INTRO -->
-            <div class="text-wrap" id="intro">
-              <p style="font-size: 1.5em; font-family: 'Kalam', cursive; color: rgb(107, 9, 36);">Hi, I'm</p>
-              <h2 id="name"><span style="color: black">CHANDRA</span> <span style="color: black">BHANU</span></h2>
+  <!-- Info Section -->
+  <div class="container mt-0 mb-0">
+    <div class="row align-items-center justify-content-center">
+      <!-- Left content -->
+      <div class="col-12 col-md-8 order-2 order-md-1" id="content_parent">
+        <div class="jumbotron mt-md-5 mb-2" style="background: rgba(151, 182, 194, 0.5); padding: 3em 2em"
+          id="content_box">
+          <!-- INTRO -->
+          <div class="text-wrap" id="intro">
+            <p style="font-size: 1.5em; font-family: 'Kalam', cursive; color: rgb(107, 9, 36);">Hi, I'm</p>
+            <h2 id="name"><span style="color: black">CHANDRA</span> <span style="color: black">BHANU</span></h2>
+            <br />
+            <div id="introDesc">
+              <p>Full-Stack Software Engineer with 4+ years of experience delivering scalable, secure, and user-centric
+                products across enterprise and SaaS domains. I specialize in building modern web applications using
+                Java, SpringBoot, Node.js, React.js, and cloud-native tools, with a strong foundation in system design
+                and software project management.</p><br />
+              <p>Experienced in working both as an individual contributor and as a pod lead in fast-paced agile
+                environments, combining hands-on execution with team leadership. I bring a solid understanding of core
+                computer science principles (OOP, DBMS, OS), system design (LLD, HLD), and Agile SDLC practices.</p>
               <br />
-              <div id="introDesc">
-                <p>Full-Stack Software Engineer with 4+ years of experience delivering scalable, secure, and user-centric products across enterprise and SaaS domains. I specialize in building modern web applications using Java, SpringBoot, Node.js, React.js, and cloud-native tools, with a strong foundation in system design and software project management.</p><br />
-                <p>Experienced in working both as an individual contributor and as a pod lead in fast-paced agile environments, combining hands-on execution with team leadership. I bring a solid understanding of core computer science principles (OOP, DBMS, OS), system design (LLD, HLD), and Agile SDLC practices.</p><br />
-                <p>Driven by a product-focused mindset and engineering discipline, I consistently align technical delivery with strategic goals to build reliable, high-impact software solutions.</p><br />
-                <p>Currently working as an AI Developer at <a href="https://www.sap.com/india/about/labs-india.html" class="text-info" style="text-decoration: none; font-size: 1em">SAP Labs</a></p>
-              </div>
-            </div>
-            <div class="row mt-5">
-              <div id="messenger" style="margin: auto; font-family: 'Philosopher', sans-serif; font-size: 1.1em; color: black;"></div>
+              <p>Driven by a product-focused mindset and engineering discipline, I consistently align technical delivery
+                with strategic goals to build reliable, high-impact software solutions.</p><br />
+              <p>Currently working as an AI Developer at <a href="https://www.sap.com/india/about/labs-india.html"
+                  class="text-info" style="text-decoration: none; font-size: 1em">SAP Labs</a></p>
             </div>
           </div>
+          <div class="row mt-5">
+            <div id="messenger"
+              style="margin: auto; font-family: 'Philosopher', sans-serif; font-size: 1.1em; color: black;"></div>
+          </div>
         </div>
+      </div>
 
-        <!-- Right Sidebar (Contact Card) -->
-        <div class="col-12 col-md-4 order-1 order-md-2 justify-content-center align-items-center" id="template">
-          <div class="jumbotron my-5 mx-3" id="nameCard">
-            <div>
+      <!-- Right Sidebar (Contact Card) -->
+      <div class="col-12 col-md-4 order-1 order-md-2 justify-content-center align-items-center" id="template"
+        style="max-height: fit-content; line-height: inherit" id="home_namecard_parent">
+        <div class="jumbotron my-5 mx-3" id="nameCard">
+          <div>
+            <div class="row text-wrap">
+              <a href="/" class="text-decoration-none text-reset"
+                style="font-family: 'Libre Baskerville', serif; font-weight: 700; text-align: center; margin: auto; font-size: 1.4em;">CHANDRA
+                BHANU</a>
+            </div>
+            <hr />
+            <div class="justify-content-start" style="line-height: 1.5em" id="contact">
               <div class="row text-wrap">
-                <a href="/" class="text-decoration-none text-reset" style="font-family: 'Libre Baskerville', serif; font-weight: 700; text-align: center; margin: auto; font-size: 1.4em;">CHANDRA BHANU</a>
+                <a href="mailto:contact@chandrabhanu.dev" class="text-decoration-none" data-toggle="tooltip"
+                  title="Send e-mail"
+                  style="font-family: 'Libre Baskerville', serif; font-weight: 400; font-size: inherit; margin: auto;"><i
+                    class="fas fa-envelope"></i> contact@chandrabhanu.dev</a>
               </div>
-              <hr />
-              <div class="justify-content-start" style="line-height: 1.5em" id="contact">
-                <div class="row text-wrap">
-                  <a href="mailto:contact@chandrabhanu.dev" class="text-decoration-none" data-toggle="tooltip" title="Send e-mail" style="font-family: 'Libre Baskerville', serif; font-weight: 400; font-size: inherit; margin: auto;"><i class="fas fa-envelope"></i> contact@chandrabhanu.dev</a>
-                </div>
-                <div class="row text-wrap">
-                  <a href="tel:+917436874653" class="text-decoration-none" data-toggle="tooltip" title="Give a call" style="font-family: 'Libre Baskerville', serif; font-weight: 400; font-size: inherit; margin: auto;"><i class="fab fa-whatsapp"></i> <i class="fas fa-phone"></i> +91 7436874653</a>
-                </div>
+              <div class="row text-wrap">
+                <a href="tel:+917436874653" class="text-decoration-none" data-toggle="tooltip" title="Give a call"
+                  style="font-family: 'Libre Baskerville', serif; font-weight: 400; font-size: inherit; margin: auto;"><i
+                    class="fab fa-whatsapp"></i> <i class="fas fa-phone"></i> +91 7436874653</a>
               </div>
-              <hr />
-              <div class="h-100 w-100 justify-content-around align-items-center" id="linkBox">
-                <a class="w-100 text-info mx-3" href="https://github.com/bhanu155" target="_blank"><i class="fab fa-github-square" style="color: #222baa"></i></a>
-                <a class="w-100 text-info mx-3" href="https://www.linkedin.com/in/chandra-bhanu" target="_blank"><i class="fab fa-linkedin" style="color: #222baa"></i></a>
-                <a class="w-100 text-info mx-3" href="https://www.hackerrank.com/cbhanu_155" target="_blank"><i class="fab fa-hackerrank" style="color: #222baa"></i></a>
+            </div>
+            <hr />
+            <div class="h-100 w-100 justify-content-around align-items-center" id="linkBox">
+              <a class="w-100 text-info mx-3" href="https://github.com/bhanu155" target="_blank"><i
+                  class="fab fa-github-square" style="color: #222baa"></i></a>
+              <a class="w-100 text-info mx-3" href="https://www.linkedin.com/in/chandra-bhanu" target="_blank"><i
+                  class="fab fa-linkedin" style="color: #222baa"></i></a>
+              <a class="w-100 text-info mx-3" href="https://www.hackerrank.com/cbhanu_155" target="_blank"><i
+                  class="fab fa-hackerrank" style="color: #222baa"></i></a>
+            </div>
+            <hr />
+            <div id="buttons justify-content-center">
+              <div class="row mt-3 mx-3">
+                <a role="button" class="btn btn-outline-dark btn-md btn-block" href="resume.html"
+                  style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">RĒSUMĒ</a>
               </div>
-              <hr />
-              <div id="buttons justify-content-center">
-                <div class="row mt-3 mx-3">
-                  <a role="button" class="btn btn-outline-dark btn-md btn-block" href="resume.html" style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">RĒSUMĒ</a>
-                </div>
-                <div class="row my-2 mx-3">
-                  <a role="button" class="btn btn-outline-dark btn-md btn-block" href="projects.html" style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">PROJECTS</a>
-                </div>
+              <div class="row my-2 mx-3">
+                <a role="button" class="btn btn-outline-dark btn-md btn-block" href="projects.html"
+                  style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">PROJECTS</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Background Script -->
-    <script>
-      const images = [
-        'assets/cover/bg1.jpg',
-        'assets/cover/bg2.jpg',
-        'assets/cover/bg3.jpg',
-        'assets/cover/bg4.jpg'
-      ];
-      let index = 0;
-      const bgImg = document.getElementById('bg-image');
+  <!-- Background Script -->
+  <script>
+    const images = [
+      'assets/cover/bg1.jpg',
+      'assets/cover/bg2.jpg',
+      'assets/cover/bg3.jpg',
+      'assets/cover/bg4.jpg'
+    ];
+    let index = 0;
+    const bgImg = document.getElementById('bg-image');
 
-      setInterval(() => {
-        index = (index + 1) % images.length;
-        bgImg.src = images[index];
-      }, 6000);
-    </script>
+    setInterval(() => {
+      index = (index + 1) % images.length;
+      bgImg.src = images[index];
+    }, 6000);
+  </script>
 
-    <!-- Scramble Text -->
-    <script src="javascript/scramble.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        new Messenger($("#messenger"));
-      });
-    </script>
-    <script src="javascript/nameFont.js"></script>
-  </body>
+  <!-- Scramble Text -->
+  <script src="javascript/scramble.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new Messenger($("#messenger"));
+    });
+  </script>
+  <script src="javascript/nameFont.js"></script>
+</body>
+
 </html>
