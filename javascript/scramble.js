@@ -94,5 +94,4 @@ var Messenger = function(el){
   m.init();
 }
 
-console.clear();
 var messenger = new Messenger($('#messenger'));
