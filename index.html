@@ -73,15 +73,9 @@
       left: 0;
       height: 100%;
       width: 100%;
-      object-fit: contain;
+      object-fit: cover;
       z-index: -1;
       transition: opacity 1.5s ease-in-out;
-    }
-
-    @media (min-width: 768px) {
-      #hero img {
-        object-fit: cover;
-      }
     }
 
     .name-box {
@@ -108,48 +102,11 @@
     <img id="bg-image" src="assets/cover/bg12.jpg" alt="Cover Background" />
     <div class="name-box">
       <h1>CHANDRA BHANU</h1>
-      <div>
-        <hr />
-        <div class="justify-content-start" style="line-height: 1.5em" id="contact">
-          <div class="row text-wrap">
-            <a href="mailto:contact@chandrabhanu.dev" class="text-decoration-none" data-toggle="tooltip"
-              title="Send e-mail"
-              style="font-family: 'Libre Baskerville', serif; font-weight: 400; font-size: inherit; margin: auto;"><i
-                class="fas fa-envelope"></i> contact@chandrabhanu.dev</a>
-          </div>
-          <div class="row text-wrap">
-            <a href="tel:+917436874653" class="text-decoration-none" data-toggle="tooltip" title="Give a call"
-              style="font-family: 'Libre Baskerville', serif; font-weight: 400; font-size: inherit; margin: auto;"><i
-                class="fab fa-whatsapp"></i> <i class="fas fa-phone"></i> +91 7436874653</a>
-          </div>
-        </div>
-        <hr />
-        <div class="d-flex justify-content-around" id="linkBox">
-          <a href="https://github.com/bhanu155" target="_blank"><i class="fab fa-github-square"
-              style="color: #222baa"></i></a>
-          <a href="https://www.linkedin.com/in/chandra-bhanu" target="_blank"><i class="fab fa-linkedin"
-              style="color: #222baa"></i></a>
-          <a href="https://www.hackerrank.com/cbhanu_155" target="_blank"><i class="fab fa-hackerrank"
-              style="color: #222baa"></i></a>
-        </div>
-        <hr />
-        <div id="buttons justify-content-center">
-          <div class="row mt-3 mx-3">
-            <a role="button" class="btn btn-outline-dark btn-md btn-block" href="resume.html"
-              style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">RĒSUMĒ</a>
-          </div>
-          <div class="row my-2 mx-3">
-            <a role="button" class="btn btn-outline-dark btn-md btn-block" href="projects.html"
-              style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">PROJECTS</a>
-          </div>
-        </div>
-      </div>
+
     </div>
   </div>
 
   <!-- Info Section -->
-  <!-- Center content -->
-
   <div class="jumbotron mt-md-0 mb-0" style="background: rgba(151, 182, 194, 0.5);">
     <div class="text-wrap">
       <p style="font-size: 1.5em; font-family: 'Kalam', cursive; color: rgb(107, 9, 36);">Hi, I'm</p>
@@ -171,24 +128,49 @@
       <div id="messenger" style="margin: auto; font-family: 'Philosopher', sans-serif; font-size: 1.1em; color: black;">
       </div>
     </div>
+    <div class="container" style="max-width: 800px;">
+      <hr />
+      <div class="justify-content-start" style="line-height: 1.5em" id="contact">
+        <div class="row text-wrap">
+          <a href="mailto:contact@chandrabhanu.dev" class="text-decoration-none" data-toggle="tooltip" title="Send e-mail"
+            style="font-family: 'Libre Baskerville', serif; font-weight: 400; font-size: inherit; margin: auto;">
+            <i class="fas fa-envelope"></i> contact@chandrabhanu.dev
+          </a>
+        </div>
+        <div class="row text-wrap">
+          <a href="tel:+917436874653" class="text-decoration-none" data-toggle="tooltip" title="Give a call"
+            style="font-family: 'Libre Baskerville', serif; font-weight: 400; font-size: inherit; margin: auto;">
+            <i class="fab fa-whatsapp"></i> <i class="fas fa-phone"></i> +91 7436874653
+          </a>
+        </div>
+      </div>
+      <hr />
+      <div class="d-flex justify-content-around" id="linkBox">
+        <a href="https://github.com/bhanu155" target="_blank"><i class="fab fa-github-square"
+            style="color: #222baa"></i></a>
+        <a href="https://www.linkedin.com/in/chandra-bhanu" target="_blank"><i class="fab fa-linkedin"
+            style="color: #222baa"></i></a>
+        <a href="https://www.hackerrank.com/cbhanu_155" target="_blank"><i class="fab fa-hackerrank"
+            style="color: #222baa"></i></a>
+      </div>
+      <hr />
+      <div id="buttons justify-content-center">
+        <div class="row mt-3 mx-3">
+          <a role="button" class="btn btn-outline-dark btn-md btn-block" href="resume.html"
+            style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">RĒSUMĒ</a>
+        </div>
+        <div class="row my-2 mx-3">
+          <a role="button" class="btn btn-outline-dark btn-md btn-block" href="projects.html"
+            style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">PROJECTS</a>
+        </div>
+      </div>
+    </div>
+    
+
   </div>
 
-
-  <!-- Background Script -->
-  <script>
-    const images = [
-      'assets/cover/bg1.jpg',
-      'assets/cover/bg2.jpg',
-      'assets/cover/bg3.jpg',
-      'assets/cover/bg4.jpg'
-    ];
-    let index = 0;
-    const bgImg = document.getElementById('bg-image');
-    setInterval(() => {
-      index = (index + 1) % images.length;
-      bgImg.src = images[index];
-    }, 6000);
-  </script>
+  <!-- Background Script for Cover images -->
+  <script src="javascript/cover.js"></script>
 
   <!-- Scramble Text -->
   <script src="javascript/scramble.js"></script>

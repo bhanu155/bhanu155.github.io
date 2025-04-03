@@ -1,41 +1,59 @@
-const bg1 = document.getElementById("bg1");
-const bg2 = document.getElementById("bg2");
-let current = 1;
+// Define image sets
+const mobileImages = [
+  'assets/cover/bg1.jpg',
+  'assets/cover/bg2.jpg',
+  'assets/cover/bg4.jpg',
+  'assets/cover/bg7.jpg',
+  'assets/cover/bg8.jpg',
+  'assets/cover/bg9.jpg',
+  'assets/cover/bg10.jpg',
+  'assets/cover/bg11.jpg',
+  'assets/cover/bg12.jpg',
+  'assets/cover/bg13.jpg',
+];
 
-// Create array of image paths
-const images = Array.from(
-  { length: 15 },
-  (_, i) => `assets/cover/bg${i + 1}.jpg`
-);
+const desktopImages = [
+  'assets/cover/bg1.jpg',
+  'assets/cover/bg2.jpg',
+  'assets/cover/bg3.jpg',
+  'assets/cover/bg4.jpg',
+  'assets/cover/bg5.jpg',
+  'assets/cover/bg6.jpg',
+  'assets/cover/bg7.jpg',
+  'assets/cover/bg8.jpg',
+  'assets/cover/bg9.jpg',
+  'assets/cover/bg10.jpg',
+  'assets/cover/bg11.jpg',
+  'assets/cover/bg12.jpg',
+  'assets/cover/bg13.jpg',
+  'assets/cover/bg14.jpg',
+  'assets/cover/bg15.jpg',
+];
 
-// Fisher-Yates Shuffle
-function shuffle(array) {
-  for (let i = array.length - 1; i > 0; i--) {
+// Shuffle function (Fisher-Yates)
+function shuffleArray(array) {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
   }
-  return array;
+  return shuffled;
 }
 
-shuffle(images); // Shuffle images once
+// Detect screen width
+const isMobile = window.innerWidth < 768;
+
+// Select and shuffle the appropriate set
+const images = shuffleArray(isMobile ? mobileImages : desktopImages);
 
 let index = 0;
+const bgImg = document.getElementById('bg-image');
 
+// Initial image
+bgImg.src = images[index];
+
+// Slideshow every 2.5 seconds
 setInterval(() => {
-  const next = (index + 1) % images.length;
-  const nextImage = images[next];
-
-  if (current === 1) {
-    bg2.style.backgroundImage = `url('${nextImage}')`;
-    bg2.style.opacity = 1;
-    bg1.style.opacity = 0;
-    current = 2;
-  } else {
-    bg1.style.backgroundImage = `url('${nextImage}')`;
-    bg1.style.opacity = 1;
-    bg2.style.opacity = 0;
-    current = 1;
-  }
-
-  index = next;
-}, 3000);
+  index = (index + 1) % images.length;
+  bgImg.src = images[index];
+}, 2500);
