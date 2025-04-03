@@ -1,33 +1,44 @@
 #hero {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-align: center;
-    font-family: 'Playfair Display SC', serif;
-  }
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+}
 
-  #hero h1 {
-    font-size: 4em;
-    font-weight: bold;
-    letter-spacing: 0.2em;
-    margin: 0;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-  }
+#hero h1 {
+  font-size: 4em;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  margin: 0;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
 
-  .fade-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background-size: cover;
-    background-position: center;
-    transition: opacity 1.5s ease-in-out;
-  }
+#hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+  z-index: -1;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.bg-fade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 1.5s ease-in-out;
+  z-index: -1;
+}
