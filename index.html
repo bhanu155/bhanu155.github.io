@@ -87,6 +87,79 @@
       }
     }
 
+    .appreciation-carousel-wrapper {
+      overflow: hidden;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 1rem 0;
+      min-height: 400px;
+      /* Ensure it grows with content */
+      position: relative;
+      background-color: transparent;
+      visibility: visible;
+    }
+
+    .appreciation-carousel {
+      display: flex;
+      animation: scroll-left 60s linear infinite;
+      align-items: stretch;
+    }
+
+    .appreciation-card {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+      height: 300px;
+      overflow-y: auto;
+      box-sizing: border-box;
+      padding: 1rem;
+      margin: 0 0.5rem;
+      background-color: #f3f3f3;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      text-align: center;
+      font-family: 'Philosopher', sans-serif;
+      font-size: 0.95rem;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card {
+      flex: 0 0 33.333%;
+      /* 3 cards at a time */
+      max-width: 33.333%;
+      box-sizing: border-box;
+      padding: 1rem;
+      margin: 0 0.5rem;
+      background-color: #f3f3f3;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      text-align: center;
+      font-family: 'Philosopher', sans-serif;
+      font-size: 1.1rem;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .appreciation-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+
+    .appreciation-carousel {
+      animation: scroll-left 5s linear infinite;
+    }
+
     html {
       scroll-behavior: smooth;
     }
@@ -173,6 +246,228 @@
     <div class="row mt-5">
       <div id="messenger"></div>
     </div>
+
+    <!-- Appreciations Section -->
+    <div class="appreciation-carousel-wrapper">
+      <div class="appreciation-carousel">
+
+        <!-- Appreciation Card 1 -->
+        <div class="card mx-3 p-3 appreciation-card shadow-sm">
+          <blockquote class="mb-2" style="font-style: italic;">"As the year comes to a close, I wanted to take a
+            moment to express my heartfelt gratitude for all the support you’ve provided throughout our development
+            efforts. Your willingness to step in and help whenever needed has been invaluable and has not gone
+            unnoticed.
+            <br>Whether it was brainstorming solutions, troubleshooting complex challenges, or lending your expertise
+            to refine ideas, your contributions have consistently elevated the quality of our work. What stands out
+            the most is your collaborative spirit and the way you approach problems with such patience and clarity.
+            You’ve not only been a great support but also a fantastic teammate who makes working together enjoyable
+            and enriching.
+            <br>Your guidance has made a significant difference, and I’ve learned a lot from your approach and
+            expertise. It’s people like you who create a positive and productive environment, and I truly appreciate
+            all the effort and energy you’ve invested in our shared goals."
+          </blockquote>
+          <footer class="blockquote-footer">Praveen Kumar, <cite title="Source Title">AI Developer, SAP Labs</cite>
+          </footer>
+        </div>
+
+        <!-- Appreciation Card 2 -->
+        <div class="card mx-3 p-3 appreciation-card shadow-sm">
+          <blockquote class="mb-2" style="font-style: italic;">
+            "I want to take a moment to extend my heartfelt gratitude for the amazing teamwork and dedication that
+            went into completing the Joule development on time and ensuring a successful release.
+            <br>This accomplishment is not just about meeting deadlines—it’s a celebration of what we can achieve
+            together. You brought your unique skills, perspectives, and energy to the table, and it’s this
+            collaboration that made all the difference.
+            <br>Working alongside such a motivated and talented person like you has been an absolute privilege. The
+            way you supported the team, tackled challenges head-on, and remained focused on our shared goal
+            exemplifies true teamwork."
+          </blockquote>
+          <footer class="blockquote-footer">Praveen Kumar, <cite title="Source Title">AI Developer, SAP Labs</cite>
+          </footer>
+        </div>
+
+        <!-- Appreciation Card 3 -->
+        <div class="card mx-3 p-3 appreciation-card shadow-sm">
+          <blockquote class="mb-2" style="font-style: italic;">
+            "Your dedication to mentoring students, despite your busy schedule, has truly made a difference in their
+            lives. Your commitment to this initiative is not only a testament to your own generosity but also a
+            powerful example for others in the organization."
+          </blockquote>
+          <footer class="blockquote-footer">Sagarika Bose, <cite title="Source Title">CSR Head, SAP Labs</cite>
+          </footer>
+        </div>
+
+        <!-- Appreciation Card 4 -->
+        <div class="card mx-3 p-3 appreciation-card shadow-sm">
+          <blockquote class="mb-2" style="font-style: italic;">
+            "Appreciate your efforts that you have put in for delivering the Joule content. You have been a crucial
+            part of the Joule team. Kudos for working on the translation Poc and finishing it in just a matter of one
+            day. Keep doing the great work Chandra ! You have a long way to go."
+          </blockquote>
+          <footer class="blockquote-footer">Ruchi Kashyap, <cite title="Source Title">Architect, SAP Labs</cite>
+          </footer>
+        </div>
+
+        <!-- Appreciation Card 5 -->
+        <div class="card mx-3 p-3 appreciation-card shadow-sm">
+          <blockquote class="mb-2" style="font-style: italic;">
+            "You have demonstrated remarkable adaptability by taking on a variety of tasks, including pipeline setup,
+            Joule capability development, language translation, and POCs. Your collaborative and solution-oriented
+            mindset has been instrumental in our team’s progress.
+
+            <br>Thank you for being such a dedicated team player. I am looking forward to continuing our collaboration
+            and tackling more challenges together."
+          </blockquote>
+          <footer class="blockquote-footer">Kaushal Jain, <cite title="Source Title">Developer, SAP Labs</cite>
+          </footer>
+        </div>
+
+        <!-- Appreciation Card 6 -->
+        <div class="card mx-3 p-3 appreciation-card shadow-sm">
+          <blockquote class="mb-2" style="font-style: italic;">
+            "I want to take a moment to recognize and appreciate your efforts in building the pipeline and taking
+            ownership of the itemization scenario, which were crucial to the success of our release. Additionally,
+            your contributions to the CDS project and your support whenever I needed help have been invaluable."
+          </blockquote>
+          <footer class="blockquote-footer">Sourin Sarkar, <cite title="Source Title">Developer, SAP Labs</cite>
+          </footer>
+        </div>
+
+        <!-- Appreciation Card 7 -->
+        <div class="card mx-3 p-3 appreciation-card shadow-sm">
+          <blockquote class="mb-2" style="font-style: italic;">
+            "Dear Chandra Bhanu,
+            I want to take a moment to appreciate your contributions to the JCAP program and the Joule development in
+            the following sprints. Your collaborative spirit and dedication to the project were truly commendable.
+            Your efforts in setting up the security pipelines were pivotal to ensuring a smooth and secure delivery.
+            Working with you has been a great experience, and your proactive approach has been an inspiration to the
+            team. Thank you for your hard work and for being such a dependable teammate."</blockquote>
+          <footer class="blockquote-footer">Deepanshu Gupta, <cite title="Source Title">Developer, SAP Labs</cite>
+          </footer>
+        </div>
+
+        <!-- Appreciation Card 8 -->
+        <div class="card mx-3 p-3 appreciation-card shadow-sm">
+          <blockquote class="mb-2" style="font-style: italic;">
+            "Thank you for always being so helpful, both professionally and personally. Your active involvement in
+            team-building activities is truly commendable and reflects your dedication to fostering a positive and
+            collaborative work environment.
+            <br>Your welcoming and approachable nature creates a sense of ease and comfort, making it a pleasure to
+            work with you. Additionally, your support and contributions to the team’s success are greatly appreciated.
+            <br>Thank you for being such a wonderful colleague!"
+          </blockquote>
+          <footer class="blockquote-footer">Roshan Bhatt, <cite title="Source Title">Developer Associate, SAP
+              Labs</cite>
+          </footer>
+        </div>
+
+        <!-- Appreciation Card 9 -->
+        <div class="card mx-3 p-3 appreciation-card shadow-sm">
+          <blockquote class="mb-2" style="font-style: italic;">
+            "The way that you have learnt the new technologies like Joule and BTP, in delivering the JCAP content for
+            Concur in a short span of time, is truly commendable. Really appreciate your efforts in setting up the
+            Security scans for JCAP which was significant for us as part of compliance! It’s really great to see your
+            passion and enthusiasm in solving the problems along with rapid prototyping as we go! Thank you for all
+            your commitment and Keep up the great work!"</blockquote>
+          <footer class="blockquote-footer">Krithika Vijayshankar, <cite title="Source Title">Director, SAP Concur
+              Spend Engineering</cite>
+          </footer>
+        </div>
+
+        <!-- Appreciation Card 10 -->
+        <div class="card mx-3 p-3 appreciation-card shadow-sm">
+          <blockquote class="mb-2" style="font-style: italic;">
+            "Thank you for all your support and for your help on drc-approuter whenever i am stuck somewhere. Your
+            curious nature helps me better understand our microservice. I look forward to more shared successes and
+            collaborative efforts in the future."</blockquote>
+          <footer class="blockquote-footer">Sourin Sarkar, <cite title="Source Title">Developer, SAP Labs</cite>
+          </footer>
+        </div>
+
+        <!-- Appreciation Card 11 -->
+        <div class="card mx-3 p-3 appreciation-card shadow-sm">
+          <blockquote class="mb-2" style="font-style: italic;">
+            "Quick leaner. Technically sound. Team player. Always ready to take up new things. Done an excellent job
+            in DRC cloud edition. Quickly learnt new things and implemented them. Keep up the good work and curiosity
+            to learn new things."</blockquote>
+          <footer class="blockquote-footer">Shivaraj Bandi, <cite title="Source Title">Senior Developer, SAP
+              Labs</cite>
+          </footer>
+        </div>
+
+        <!-- Appreciation Card 12 -->
+        <div class="card mx-3 p-3 appreciation-card shadow-sm">
+          <blockquote class="mb-2" style="font-style: italic;">
+            "Your work on GSTR2X and Clause 44 is appreciable. I appreciate you are always willing to take new tasks
+            and challenges."</blockquote>
+          <footer class="blockquote-footer">Thimmaraju G S, <cite title="Source Title">Developer, SAP Labs</cite>
+          </footer>
+        </div>
+
+        <!-- Appreciation Card 13 -->
+        <div class="card mx-3 p-3 appreciation-card shadow-sm">
+          <blockquote class="mb-2" style="font-style: italic;">
+            "Thanks for your support in delivering SAC story and content on time.
+            <br>We started our SAC journey from zero knowledge , gaining relevant skills and now i could see expertise
+            in SAC development.
+            <br>Appreciate on your enthusiasm to learn NEW!!"
+          </blockquote>
+          <footer class="blockquote-footer">Purushothamareddy Galireddy, <cite title="Source Title">Product Owner, SAP
+              Labs</cite>
+          </footer>
+        </div>
+
+        <!-- Appreciation Card 14 -->
+        <div class="card mx-3 p-3 appreciation-card shadow-sm">
+          <blockquote class="mb-2" style="font-style: italic;">
+            "Your commitment to delivering the important features of GSTR9 like the calculation of aggregations was
+            tremendous. You really worked hard and dedicatedly worked on understanding features during development.
+            Keep up the spirit !!"</blockquote>
+          <footer class="blockquote-footer">Yogeshwari Dongre, <cite title="Source Title">Developer, SAP Labs</cite>
+          </footer>
+        </div>
+
+        <!-- Appreciation Card 15 -->
+        <div class="card mx-3 p-3 appreciation-card shadow-sm">
+          <blockquote class="mb-2" style="font-style: italic;">
+            "Excellent teamwork in releasing the feature GSTR9/GSTR6 on time. Keep up the good work and stay curious.
+            Always happy to take up the work."</blockquote>
+          <footer class="blockquote-footer">Shivaraj Bandi, <cite title="Source Title">Senior Developer, SAP
+              Labs</cite>
+          </footer>
+        </div>
+
+        <!-- Appreciation Card 16 -->
+        <div class="card mx-3 p-3 appreciation-card shadow-sm">
+          <blockquote class="mb-2" style="font-style: italic;">
+            "Being new members of our team, you all have put immense efforts in learning the product and
+            developing/enhancing functionalities which is eventually helping our customers to have more trust in
+            product.
+
+            <br>In past release, the way you have collaborated in developing GSTR9 is really appreciative. Whenever
+            the issues were reported you have taken responsiblility to resolve the same as soon as possible. It helped
+            in delivering the functionality on time."
+          </blockquote>
+          <footer class="blockquote-footer">Nidhi Shaw, <cite title="Source Title">QA Specialist, SAP Labs</cite>
+          </footer>
+        </div>
+
+        <!-- Appreciation Card 17 -->
+        <div class="card mx-3 p-3 appreciation-card shadow-sm">
+          <blockquote class="mb-2" style="font-style: italic;">
+            "Appreciate your involvement in Gstr9 development, able to understand requirements and come up with re
+            usable frame work.
+            <br>Appreciating for taking up new technology UI5, Hana and working.
+            <br>Keep up same curiosity in involving with team and learning new technologies."
+          </blockquote>
+          <footer class="blockquote-footer">Purushothamareddy Galireddy, <cite title="Source Title">Product Owner, SAP
+              Labs</cite>
+          </footer>
+        </div>
+
+      </div>
+    </div>
+
     <div class="contact-card mx-auto my-4" style="max-width: 600px;">
       <hr />
       <div class="justify-content-start" style="line-height: 1.5em" id="contact">
@@ -217,7 +512,7 @@
 
   </div>
 
-  <!-- Background Script for Cover images -->
+  <!-- Scripts -->
   <script src="javascript/cover.js"></script>
 
   <!-- Scramble Text -->
@@ -225,6 +520,16 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       new Messenger($("#messenger"));
+
+      const carousel = document.querySelector('.appreciation-carousel');
+      if (carousel && !carousel.classList.contains('cloned')) {
+        const cards = [...carousel.children];
+        cards.forEach(card => {
+          const clone = card.cloneNode(true);
+          carousel.appendChild(clone);
+        });
+        carousel.classList.add('cloned');
+      }
     });
   </script>
   <script src="javascript/nameFont.js"></script>
