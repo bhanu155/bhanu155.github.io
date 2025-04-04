@@ -94,7 +94,6 @@
       margin: 0 auto;
       padding: 1rem 0;
       min-height: 400px;
-      /* Ensure it grows with content */
       position: relative;
       background-color: transparent;
       visibility: visible;
@@ -102,14 +101,14 @@
 
     .appreciation-carousel {
       display: flex;
-      animation: scroll-left 60s linear infinite;
-      align-items: stretch;
+      animation: scroll-left 30s linear infinite;
+      /* align-items: stretch; */
     }
 
     .appreciation-card {
       flex: 0 0 33.333%;
       max-width: 33.333%;
-      height: 300px;
+      height: 400px;
       overflow-y: auto;
       box-sizing: border-box;
       padding: 1rem;
@@ -125,7 +124,6 @@
 
     .card {
       flex: 0 0 33.333%;
-      /* 3 cards at a time */
       max-width: 33.333%;
       box-sizing: border-box;
       padding: 1rem;
@@ -141,7 +139,17 @@
 
     @keyframes scroll-left {
       0% {
-        transform: translateX(0%);
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    @keyframes scroll-left-px {
+      0% {
+        transform: translateX(0);
       }
 
       100% {
@@ -157,7 +165,7 @@
     }
 
     .appreciation-carousel {
-      animation: scroll-left 5s linear infinite;
+      display: flex;
     }
 
     html {
@@ -253,18 +261,12 @@
 
         <!-- Appreciation Card 1 -->
         <div class="card mx-3 p-3 appreciation-card shadow-sm">
-          <blockquote class="mb-2" style="font-style: italic;">"As the year comes to a close, I wanted to take a
-            moment to express my heartfelt gratitude for all the support you’ve provided throughout our development
-            efforts. Your willingness to step in and help whenever needed has been invaluable and has not gone
-            unnoticed.
-            <br>Whether it was brainstorming solutions, troubleshooting complex challenges, or lending your expertise
+          <blockquote class="mb-2" style="font-style: italic;">"Whether it was brainstorming solutions, troubleshooting
+            complex challenges, or lending your expertise
             to refine ideas, your contributions have consistently elevated the quality of our work. What stands out
             the most is your collaborative spirit and the way you approach problems with such patience and clarity.
             You’ve not only been a great support but also a fantastic teammate who makes working together enjoyable
-            and enriching.
-            <br>Your guidance has made a significant difference, and I’ve learned a lot from your approach and
-            expertise. It’s people like you who create a positive and productive environment, and I truly appreciate
-            all the effort and energy you’ve invested in our shared goals."
+            and enriching."
           </blockquote>
           <footer class="blockquote-footer">Praveen Kumar, <cite title="Source Title">AI Developer, SAP Labs</cite>
           </footer>
@@ -273,12 +275,9 @@
         <!-- Appreciation Card 2 -->
         <div class="card mx-3 p-3 appreciation-card shadow-sm">
           <blockquote class="mb-2" style="font-style: italic;">
-            "I want to take a moment to extend my heartfelt gratitude for the amazing teamwork and dedication that
-            went into completing the Joule development on time and ensuring a successful release.
-            <br>This accomplishment is not just about meeting deadlines—it’s a celebration of what we can achieve
-            together. You brought your unique skills, perspectives, and energy to the table, and it’s this
-            collaboration that made all the difference.
-            <br>Working alongside such a motivated and talented person like you has been an absolute privilege. The
+            "You brought your unique skills, perspectives, and energy to the table, and it’s this
+            collaboration that made all the difference. Working alongside such a motivated and talented person like you
+            has been an absolute privilege. The
             way you supported the team, tackled challenges head-on, and remained focused on our shared goal
             exemplifies true teamwork."
           </blockquote>
@@ -314,7 +313,6 @@
             "You have demonstrated remarkable adaptability by taking on a variety of tasks, including pipeline setup,
             Joule capability development, language translation, and POCs. Your collaborative and solution-oriented
             mindset has been instrumental in our team’s progress.
-
             <br>Thank you for being such a dedicated team player. I am looking forward to continuing our collaboration
             and tackling more challenges together."
           </blockquote>
@@ -336,9 +334,7 @@
         <!-- Appreciation Card 7 -->
         <div class="card mx-3 p-3 appreciation-card shadow-sm">
           <blockquote class="mb-2" style="font-style: italic;">
-            "Dear Chandra Bhanu,
-            I want to take a moment to appreciate your contributions to the JCAP program and the Joule development in
-            the following sprints. Your collaborative spirit and dedication to the project were truly commendable.
+            "Your collaborative spirit and dedication to the project were truly commendable.
             Your efforts in setting up the security pipelines were pivotal to ensuring a smooth and secure delivery.
             Working with you has been a great experience, and your proactive approach has been an inspiration to the
             team. Thank you for your hard work and for being such a dependable teammate."</blockquote>
@@ -440,10 +436,9 @@
         <!-- Appreciation Card 16 -->
         <div class="card mx-3 p-3 appreciation-card shadow-sm">
           <blockquote class="mb-2" style="font-style: italic;">
-            "Being new members of our team, you all have put immense efforts in learning the product and
+            "You have put immense efforts in learning the product and
             developing/enhancing functionalities which is eventually helping our customers to have more trust in
             product.
-
             <br>In past release, the way you have collaborated in developing GSTR9 is really appreciative. Whenever
             the issues were reported you have taken responsiblility to resolve the same as soon as possible. It helped
             in delivering the functionality on time."
@@ -455,8 +450,9 @@
         <!-- Appreciation Card 17 -->
         <div class="card mx-3 p-3 appreciation-card shadow-sm">
           <blockquote class="mb-2" style="font-style: italic;">
-            "Appreciate your involvement in Gstr9 development, able to understand requirements and come up with re
-            usable frame work.
+            "Appreciate your involvement in Gstr9 development. Youe ability to understand requirements and come up with
+            re
+            usable framework was truely commendable.
             <br>Appreciating for taking up new technology UI5, Hana and working.
             <br>Keep up same curiosity in involving with team and learning new technologies."
           </blockquote>
@@ -466,8 +462,9 @@
         </div>
 
       </div>
+      <br>
     </div>
-
+    
     <div class="contact-card mx-auto my-4" style="max-width: 600px;">
       <hr />
       <div class="justify-content-start" style="line-height: 1.5em" id="contact">
@@ -508,8 +505,6 @@
       </div>
     </div>
 
-
-
   </div>
 
   <!-- Scripts -->
@@ -522,15 +517,28 @@
       new Messenger($("#messenger"));
 
       const carousel = document.querySelector('.appreciation-carousel');
+      const wrapper = document.querySelector('.appreciation-carousel-wrapper');
+
       if (carousel && !carousel.classList.contains('cloned')) {
-        const cards = [...carousel.children];
-        cards.forEach(card => {
-          const clone = card.cloneNode(true);
-          carousel.appendChild(clone);
-        });
+        const cards = Array.from(carousel.querySelectorAll('.appreciation-card'));
+
+        // Clone cards to fill space for seamless loop
+        for (let i = 0; i < 2; i++) {
+          cards.forEach(card => {
+            carousel.appendChild(card.cloneNode(true));
+          });
+        }
+
         carousel.classList.add('cloned');
+
+        // After appending, set animation
+        const totalScrollWidth = carousel.scrollWidth;
+        const visibleWidth = wrapper.offsetWidth;
+        const distanceToScroll = totalScrollWidth - visibleWidth;
+
+        // Add inline animation with pixel distance
+        carousel.style.animation = `scroll-left-px ${Math.max(distanceToScroll / 30, 20)}s linear infinite`; // adjustable speed
       }
-    });
   </script>
   <script src="javascript/nameFont.js"></script>
 </body>
