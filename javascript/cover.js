@@ -8,6 +8,7 @@ const mobileImages = [
   "assets/cover/bg10.jpg",
   "assets/cover/bg11.jpg",
   "assets/cover/bg13.jpg",
+  "assets/cover/bg17.jpg",
 ];
 
 const desktopImages = [
@@ -25,6 +26,8 @@ const desktopImages = [
   "assets/cover/bg13.jpg",
   "assets/cover/bg14.jpg",
   "assets/cover/bg15.jpg",
+  "assets/cover/bg16.jpg",
+  "assets/cover/bg17.jpg",
 ];
 
 // Shuffle utility
