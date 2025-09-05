@@ -27,7 +27,6 @@ const desktopImages = [
   "assets/cover/bg14.jpg",
   "assets/cover/bg15.jpg",
   "assets/cover/bg16.jpg",
-  "assets/cover/bg17.jpg",
 ];
 
 // Shuffle utility
