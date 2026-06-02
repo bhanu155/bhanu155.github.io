@@ -92,6 +92,7 @@
       overflow-y: hidden;
       scrollbar-width: thin;
       scroll-behavior: smooth;
+      cursor: grab;
       width: 100%;
       max-width: 1000px;
       margin: 0 auto;
@@ -102,27 +103,14 @@
       visibility: visible;
     }
 
-    .appreciation-carousel-wrapper::-webkit-scrollbar {
-      height: 10px;
-    }
-
-    .appreciation-carousel-wrapper::-webkit-scrollbar-track {
-      background: #d8d8d8;
-      border-radius: 10px;
-    }
-
-    .appreciation-carousel-wrapper::-webkit-scrollbar-thumb {
-      background: #5a7d8a;
-      border-radius: 10px;
-    }
-
-    .appreciation-carousel-wrapper::-webkit-scrollbar-thumb:hover {
-      background: #3d5964;
+    .appreciation-carousel-wrapper:active {
+      cursor: grabbing;
     }
 
     .appreciation-carousel {
       display: flex;
     }
+
 
     .appreciation-card {
       flex: 0 0 33.333%;
