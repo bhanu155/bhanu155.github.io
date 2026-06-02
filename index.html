@@ -103,16 +103,21 @@
     }
 
     .appreciation-carousel-wrapper::-webkit-scrollbar {
-      height: 8px;
+      height: 10px;
+    }
+
+    .appreciation-carousel-wrapper::-webkit-scrollbar-track {
+      background: #d8d8d8;
+      border-radius: 10px;
     }
 
     .appreciation-carousel-wrapper::-webkit-scrollbar-thumb {
-      background: #888;
+      background: #5a7d8a;
       border-radius: 10px;
     }
 
     .appreciation-carousel-wrapper::-webkit-scrollbar-thumb:hover {
-      background: #555;
+      background: #3d5964;
     }
 
     .appreciation-carousel {
@@ -481,9 +486,6 @@
 
       </div>
       <br>
-      <h2 class="text-center mb-4">
-        Appreciations & Testimonials
-      </h2>
     </div>
     
     <div class="contact-card mx-auto my-4" style="max-width: 600px;">
@@ -566,7 +568,7 @@
           stopAutoScroll();
 
           autoScroll = setInterval(() => {
-            wrapper.scrollLeft += 0.5;
+            wrapper.scrollLeft += 2;
 
             if (
               wrapper.scrollLeft >=
