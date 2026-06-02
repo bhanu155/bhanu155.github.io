@@ -88,7 +88,7 @@
     }
 
     .appreciation-carousel-wrapper {
-      overflow-x: auto;
+      overflow-x: scroll;
       overflow-y: hidden;
       scrollbar-width: thin;
       scroll-behavior: smooth;
@@ -567,7 +567,9 @@
         function startAutoScroll() {
           stopAutoScroll();
 
-          autoScroll = setInterval(() => {
+          let animationFrame;
+
+          function animate() {
             wrapper.scrollLeft += 2;
 
             if (
@@ -576,7 +578,18 @@
             ) {
               wrapper.scrollLeft = 0;
             }
-          }, 20);
+
+            animationFrame = requestAnimationFrame(animate);
+          }
+
+          function startAutoScroll() {
+            stopAutoScroll();
+            animate();
+          }
+
+          function stopAutoScroll() {
+            cancelAnimationFrame(animationFrame);
+          }
         }
 
         function stopAutoScroll() {
@@ -589,19 +602,35 @@
           startAutoScroll();
         });
 
-        wrapper.addEventListener("scroll", () => {
+        let userInteracting = false;
+
+        wrapper.addEventListener("mousedown", () => {
+          userInteracting = true;
           stopAutoScroll();
+        });
 
-          clearTimeout(resumeTimer);
+        wrapper.addEventListener("touchstart", () => {
+          userInteracting = true;
+          stopAutoScroll();
+        });
 
-          resumeTimer = setTimeout(() => {
+        document.addEventListener("mouseup", () => {
+          if (userInteracting) {
+            userInteracting = false;
             startAutoScroll();
-          }, 2500);
+          }
+        });
+
+        document.addEventListener("touchend", () => {
+          if (userInteracting) {
+            userInteracting = false;
+            startAutoScroll();
+          }
         });
 
         startAutoScroll();
       }
-    }, 16);
+    });
   </script>
   <script src="javascript/nameFont.js"></script>
 
