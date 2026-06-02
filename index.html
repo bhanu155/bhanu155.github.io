@@ -88,7 +88,10 @@
     }
 
     .appreciation-carousel-wrapper {
-      overflow: hidden;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scrollbar-width: thin;
+      scroll-behavior: smooth;
       width: 100%;
       max-width: 1000px;
       margin: 0 auto;
@@ -99,10 +102,21 @@
       visibility: visible;
     }
 
+    .appreciation-carousel-wrapper::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .appreciation-carousel-wrapper::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px;
+    }
+
+    .appreciation-carousel-wrapper::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
     .appreciation-carousel {
       display: flex;
-      animation: scroll-left 30s linear infinite;
-      /* align-items: stretch; */
     }
 
     .appreciation-card {
@@ -122,6 +136,11 @@
       box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
     }
 
+    .appreciation-card:hover {
+      transform: translateY(-4px);
+      transition: transform 0.2s ease;
+    }
+
     .card {
       flex: 0 0 33.333%;
       max-width: 33.333%;
@@ -135,26 +154,6 @@
       font-family: 'Philosopher', sans-serif;
       font-size: 1.1rem;
       box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    @keyframes scroll-left {
-      0% {
-        transform: translateX(0);
-      }
-
-      100% {
-        transform: translateX(-100%);
-      }
-    }
-
-    @keyframes scroll-left-px {
-        from {
-          transform: translateX(0);
-        }
-
-        to {
-          transform: translateX(-5000px);
-        }
     }
 
     @media (max-width: 768px) {
@@ -512,7 +511,7 @@
             style="color: #222baa"></i></a>
       </div>
       <hr />
-      <div id="buttons justify-content-center">
+      <div id="buttons" class="justify-content-center">
         <div class="row mt-3 mx-3">
           <a role="button" class="btn btn-outline-dark btn-md btn-block" href="resume.html"
             style="font-size: large; font-family: 'Kalam', cursive; font-weight: 600;">RĒSUMĒ</a>
@@ -556,17 +555,56 @@
         const distanceToScroll = totalScrollWidth - visibleWidth;
 
         // Add inline animation with pixel distance
-        carousel.style.animation = `scroll-left-px ${Math.max(distanceToScroll / 30, 20)}s linear infinite`; // adjustable speed
+        // carousel.style.animation = `scroll-left-px ${Math.max(distanceToScroll / 30, 20)}s linear infinite`; // adjustable speed
+        let autoScroll;
+        let resumeTimer;
+
+        function startAutoScroll() {
+          stopAutoScroll();
+
+          autoScroll = setInterval(() => {
+            wrapper.scrollLeft += 0.5;
+
+            if (
+              wrapper.scrollLeft >=
+              wrapper.scrollWidth - wrapper.clientWidth
+            ) {
+              wrapper.scrollLeft = 0;
+            }
+          }, 20);
+        }
+
+        function stopAutoScroll() {
+          clearInterval(autoScroll);
+        }
+
+        wrapper.addEventListener("mouseenter", stopAutoScroll);
+
+        wrapper.addEventListener("mouseleave", () => {
+          startAutoScroll();
+        });
+
+        wrapper.addEventListener("scroll", () => {
+          stopAutoScroll();
+
+          clearTimeout(resumeTimer);
+
+          resumeTimer = setTimeout(() => {
+            startAutoScroll();
+          }, 2500);
+        });
+
+        startAutoScroll();
       }
     });
   </script>
   <script src="javascript/nameFont.js"></script>
 
 
-<footer
-  style="background-color: #000; color: #ccc; text-align: center; padding: 1rem 0; font-family: 'Philosopher', sans-serif;">
-  &copy; Chandra Bhanu 2026. All rights reserved.
-</footer>
+  <footer
+    style="background-color: #000; color: #ccc; text-align: center; padding: 1rem 0; font-family: 'Philosopher', sans-serif;">
+    &copy; Chandra Bhanu 2026. All rights reserved.
+  </footer>
 
 </body>
 
