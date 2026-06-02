@@ -88,9 +88,11 @@
     }
 
     .appreciation-carousel-wrapper {
-      overflow-x: scroll;
+      overflow-x: auto;
       overflow-y: hidden;
-      scrollbar-width: thin;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;      /* Firefox */
+      -ms-overflow-style: none;   /* IE/Edge */
       scroll-behavior: smooth;
       cursor: grab;
       width: 100%;
@@ -101,6 +103,11 @@
       position: relative;
       background-color: transparent;
       visibility: visible;
+      user-select: none;
+    }
+
+    .appreciation-carousel-wrapper::-webkit-scrollbar {
+      display: none; /* Chrome/Safari */
     }
 
     .appreciation-carousel-wrapper:active {
@@ -130,6 +137,7 @@
       font-family: 'Philosopher', sans-serif;
       font-size: 0.95rem;
       box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+      user-select: none;
     }
 
     .appreciation-card:hover {
