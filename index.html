@@ -539,71 +539,59 @@
     document.addEventListener("DOMContentLoaded", function () {
       new Messenger($("#messenger"));
 
-      const carousel = document.querySelector('.appreciation-carousel');
-      const wrapper = document.querySelector('.appreciation-carousel-wrapper');
+      const carousel = document.querySelector(".appreciation-carousel");
+      const wrapper = document.querySelector(".appreciation-carousel-wrapper");
 
-      if (carousel && !carousel.classList.contains('cloned')) {
-        const cards = Array.from(carousel.querySelectorAll('.appreciation-card'));
+      if (carousel && !carousel.classList.contains("cloned")) {
+        const cards = Array.from(
+          carousel.querySelectorAll(".appreciation-card")
+        );
 
-        // Clone cards to fill space for seamless loop
+        // Clone cards for seamless scrolling
         for (let i = 0; i < 2; i++) {
-          cards.forEach(card => {
+          cards.forEach((card) => {
             carousel.appendChild(card.cloneNode(true));
           });
         }
 
-        carousel.classList.add('cloned');
+        carousel.classList.add("cloned");
 
-        // After appending, set animation
-        const totalScrollWidth = carousel.scrollWidth;
-        const visibleWidth = wrapper.offsetWidth;
-        const distanceToScroll = totalScrollWidth - visibleWidth;
+        let animationFrame;
+        let userInteracting = false;
 
-        // Add inline animation with pixel distance
-        // carousel.style.animation = `scroll-left-px ${Math.max(distanceToScroll / 30, 20)}s linear infinite`; // adjustable speed
-        let autoScroll;
-        let resumeTimer;
+        function animate() {
+          wrapper.scrollLeft += 2; // Increase to 3-4 for faster movement
+
+          if (
+            wrapper.scrollLeft >=
+            wrapper.scrollWidth - wrapper.clientWidth
+          ) {
+            wrapper.scrollLeft = 0;
+          }
+
+          animationFrame = requestAnimationFrame(animate);
+        }
 
         function startAutoScroll() {
-          stopAutoScroll();
-
-          let animationFrame;
-
-          function animate() {
-            wrapper.scrollLeft += 2;
-
-            if (
-              wrapper.scrollLeft >=
-              wrapper.scrollWidth - wrapper.clientWidth
-            ) {
-              wrapper.scrollLeft = 0;
-            }
-
-            animationFrame = requestAnimationFrame(animate);
-          }
-
-          function startAutoScroll() {
-            stopAutoScroll();
-            animate();
-          }
-
-          function stopAutoScroll() {
-            cancelAnimationFrame(animationFrame);
-          }
+          cancelAnimationFrame(animationFrame);
+          animate();
         }
 
         function stopAutoScroll() {
-          clearInterval(autoScroll);
+          cancelAnimationFrame(animationFrame);
         }
 
+        // Pause when mouse is over carousel
         wrapper.addEventListener("mouseenter", stopAutoScroll);
 
+        // Resume when mouse leaves
         wrapper.addEventListener("mouseleave", () => {
-          startAutoScroll();
+          if (!userInteracting) {
+            startAutoScroll();
+          }
         });
 
-        let userInteracting = false;
-
+        // Pause while user drags scrollbar
         wrapper.addEventListener("mousedown", () => {
           userInteracting = true;
           stopAutoScroll();
